@@ -1,7 +1,7 @@
 const translations = {
   "de": {
-    "title": "Kabivio · Mobile LKW-Innenreinigung in Offenbach",
-    "description": "Mobile Reinigung von LKW-Kabinen in Offenbach und Umgebung. Leistungen vergleichen und eine unverbindliche Anfrage vorbereiten.",
+    "title": "Kabivio · Mobile LKW-Innenreinigung in Frankfurt am Main, Offenbach und Hanau",
+    "description": "Mobile LKW-Innenreinigung in Frankfurt am Main, Offenbach, Hanau und Umgebung. Leistungen vergleichen und eine unverbindliche Anfrage vorbereiten.",
     "skip": "Zum Inhalt",
     "service": "Mobile LKW-Innenreinigung",
     "navServices": "Leistungen",
@@ -11,10 +11,10 @@ const translations = {
     "language": "Sprache",
     "menu": "Menü",
     "notice": "Wir bereiten den Start vor. Interesse? Schreib uns auf WhatsApp.",
-    "eyebrow": "OFFENBACH & RHEIN-MAIN",
+    "eyebrow": "Frankfurt am Main, Offenbach, Hanau und Umgebung",
     "hero1": "Deine Kabine.",
     "hero2": "Neues Gefühl.",
-    "intro": "Dein Arbeitsplatz verdient einen Neustart. Mobile LKW-Innenreinigung in Offenbach und Rhein-Main.",
+    "intro": "Dein Arbeitsplatz verdient einen Neustart. Mobile LKW-Innenreinigung in Frankfurt am Main, Offenbach, Hanau und Umgebung.",
     "cta": "Reinigung auswählen",
     "secondary": "Fragen? WhatsApp",
     "heroNote": "Persönlich mit Marcus · Für Fahrer & kleine Flotten",
@@ -76,7 +76,7 @@ const translations = {
       ]
     ],
     "areaTag": "MOBIL IN DEINER REGION",
-    "areaTitle": "Offenbach als Ausgangspunkt. Dein Standort nach Absprache.",
+    "areaTitle": "Frankfurt am Main, Offenbach, Hanau und Umgebung.",
     "areaText": "Ob einzelnes Fahrerhaus oder mehrere Fahrzeuge: Die Reinigung ist auf einem geeigneten, freigegebenen Stellplatz geplant. Anfahrt und benötigte Versorgung werden vorher abgestimmt.",
     "plannerTag": "IN WENIGEN SCHRITTEN",
     "plannerTitle": "Dein nächster Stopp: sauber.",
@@ -115,7 +115,7 @@ const translations = {
       ],
       [
         "Was braucht ihr am Standort?",
-        "Einen geeigneten, genehmigten Stellplatz, Zugang zur Kabine sowie gegebenenfalls Strom und Wasser. Die ordnungsgemäße Aufnahme und Entsorgung des Schmutzwassers muss vorab geklärt sein."
+        "Einen geeigneten, genehmigten Stellplatz, Zugang zur Kabine sowie gegebenenfalls Strom und Wasser. Die ordnungsgemäße Aufnahme und Entsorgung des Schmutzwassers muss vorab geklärt sein. Gib im Anfrageformular an, ob eine Steckdose verfügbar ist oder wir eine Stromversorgung mitbringen sollen. Die Möglichkeiten stimmen wir vorher ab."
       ],
       [
         "Kann ich direkt nach einer Textilreinigung losfahren?",
@@ -142,14 +142,12 @@ const translations = {
     "contactText": "Schreib Marcus auf WhatsApp oder ruf an.",
     "call": "Anrufen",
     "whatsapp": "WhatsApp",
-    "fromLabel": "Ab",
+    "fromLabel": "ab",
     "mobileChoose": "Reinigung wählen",
     "minus": "Ein Fahrzeug weniger",
     "plus": "Ein Fahrzeug mehr",
     "ready": "WhatsApp-Link vorbereitet. Bitte dort prüfen und selbst senden.",
     "messagePreview": "Nachricht ansehen",
-    "pauseMotion": "Animationen pausieren",
-    "resumeMotion": "Animationen starten",
     "motionLabel": "Bewegung",
     "exploreTag": "INNEN MACHT DEN UNTERSCHIED",
     "exploreTitle": "Mehr als nur sauber.",
@@ -166,13 +164,18 @@ const translations = {
     "tapHint": "Bereich antippen und mehr erfahren",
     "discover": "Kabine entdecken",
     "ribbon1": "MOBILE INNENREINIGUNG",
-    "ribbon2": "OFFENBACH · RHEIN-MAIN",
+    "ribbon2": "Frankfurt am Main, Offenbach, Hanau und Umgebung",
     "ribbon3": "DEINE KABINE IM FOKUS",
-    "motionReduced": "Animationen durch deine Geräteeinstellung reduziert"
+    "electricityLabel": "Gibt es eine Steckdose am Reinigungsort?",
+    "electricityAvailable": "Ja, eine Steckdose ist verfügbar.",
+    "electricityNeeded": "Nein, bitte bringt eine Stromversorgung mit.",
+    "electricityUnsure": "Ich bin nicht sicher.",
+    "electricityHelp": "Falls wir die Stromversorgung mitbringen sollen, klären wir die Möglichkeiten vor dem Termin.",
+    "electricityRequired": "Bitte wähle eine Antwort zur Stromversorgung."
   },
   "en": {
-    "title": "Kabivio · Mobile truck cabin cleaning in Offenbach",
-    "description": "Mobile truck interior cleaning in Offenbach and the Rhine-Main area. Compare services and prepare a non-binding enquiry.",
+    "title": "Kabivio · Mobile truck cabin cleaning in Frankfurt am Main, Offenbach and Hanau",
+    "description": "Mobile truck interior cleaning in Frankfurt am Main, Offenbach, Hanau and nearby areas. Compare services and prepare a non-binding enquiry.",
     "skip": "Skip to content",
     "service": "Mobile truck interior cleaning",
     "navServices": "Services",
@@ -182,10 +185,10 @@ const translations = {
     "language": "Language",
     "menu": "Menu",
     "notice": "Preparing to launch. Interested? Message us on WhatsApp.",
-    "eyebrow": "OFFENBACH & RHINE-MAIN",
+    "eyebrow": "Frankfurt am Main, Offenbach, Hanau and nearby areas",
     "hero1": "Reset your",
     "hero2": "cabin.",
-    "intro": "Give your workspace a fresh start. Mobile truck interior cleaning in Offenbach and the Rhine-Main area.",
+    "intro": "Give your workspace a fresh start. Mobile truck interior cleaning in Frankfurt am Main, Offenbach, Hanau and nearby areas.",
     "cta": "Choose your clean",
     "secondary": "Questions? WhatsApp",
     "heroNote": "Personally with Marcus · For drivers & small fleets",
@@ -247,7 +250,7 @@ const translations = {
       ]
     ],
     "areaTag": "MOBILE IN YOUR AREA",
-    "areaTitle": "Based in Offenbach. Coming to an agreed location.",
+    "areaTitle": "Frankfurt am Main, Offenbach, Hanau and nearby areas.",
     "areaText": "One cabin or several vehicles: cleaning is planned at a suitable, authorised parking area. Travel and the supplies needed are agreed in advance.",
     "plannerTag": "A FEW SIMPLE STEPS",
     "plannerTitle": "Next stop: a fresh cabin.",
@@ -286,7 +289,7 @@ const translations = {
       ],
       [
         "What is needed at the location?",
-        "A suitable, authorised parking space, access to the cabin and, where needed, electricity and water. Proper collection and disposal of wastewater must be agreed in advance."
+        "A suitable, authorised parking space, access to the cabin and, where needed, electricity and water. Proper collection and disposal of wastewater must be agreed in advance. Use the enquiry form to tell us whether a power socket is available or you need us to bring a power supply. We’ll agree the arrangements in advance."
       ],
       [
         "Can I drive straight after upholstery cleaning?",
@@ -319,8 +322,6 @@ const translations = {
     "plus": "One more truck",
     "ready": "WhatsApp link prepared. Please review and send the message there yourself.",
     "messagePreview": "View message",
-    "pauseMotion": "Pause animations",
-    "resumeMotion": "Play animations",
     "motionLabel": "Motion",
     "exploreTag": "IT’S WHAT’S INSIDE THAT COUNTS",
     "exploreTitle": "More than a clean look.",
@@ -337,13 +338,18 @@ const translations = {
     "tapHint": "Tap an area to explore the care",
     "discover": "Explore the cabin",
     "ribbon1": "MOBILE INTERIOR CLEANING",
-    "ribbon2": "OFFENBACH · RHINE-MAIN",
+    "ribbon2": "Frankfurt am Main, Offenbach, Hanau and nearby areas",
     "ribbon3": "ALL ABOUT YOUR CABIN",
-    "motionReduced": "Animations reduced by your device setting"
+    "electricityLabel": "Is a power socket available at the cleaning location?",
+    "electricityAvailable": "Yes, a power socket is available.",
+    "electricityNeeded": "No, please bring a power supply.",
+    "electricityUnsure": "I’m not sure.",
+    "electricityHelp": "If you need us to bring a power supply, we’ll agree the arrangements before the appointment.",
+    "electricityRequired": "Please choose an answer about the power supply."
   },
   "tr": {
-    "title": "Kabivio · Offenbach mobil tır kabini temizliği",
-    "description": "Offenbach ve Rhein-Main bölgesinde mobil tır iç temizliği. Hizmetleri karşılaştırın ve bağlayıcı olmayan bir talep hazırlayın.",
+    "title": "Kabivio · Frankfurt am Main, Offenbach ve Hanau’da mobil tır kabini temizliği",
+    "description": "Frankfurt am Main, Offenbach, Hanau ve çevresinde mobil tır iç temizliği. Hizmetleri karşılaştırın ve bağlayıcı olmayan bir talep hazırlayın.",
     "skip": "İçeriğe geç",
     "service": "Mobil kamyon iç temizliği",
     "navServices": "Hizmetler",
@@ -353,10 +359,10 @@ const translations = {
     "language": "Dil",
     "menu": "Menü",
     "notice": "Açılışa hazırlanıyoruz. İlgileniyorsanız WhatsApp’tan yazın.",
-    "eyebrow": "OFFENBACH & RHEIN-MAIN",
+    "eyebrow": "Frankfurt am Main, Offenbach, Hanau ve çevresi",
     "hero1": "Kabininde",
     "hero2": "yeni bir his.",
-    "intro": "Çalışma alanın temiz bir başlangıcı hak ediyor. Offenbach ve Ren-Main bölgesinde mobil kamyon iç temizliği.",
+    "intro": "Çalışma alanın temiz bir başlangıcı hak ediyor. Frankfurt am Main, Offenbach, Hanau ve çevresinde mobil kamyon iç temizliği.",
     "cta": "Temizliğini seç",
     "secondary": "Sorunuz mu var? WhatsApp",
     "heroNote": "Doğrudan Marcus ile · Sürücüler ve küçük filolar için",
@@ -418,7 +424,7 @@ const translations = {
       ]
     ],
     "areaTag": "BÖLGENİZDE MOBİL HİZMET",
-    "areaTitle": "Başlangıç noktamız Offenbach. Konumu birlikte belirleyelim.",
+    "areaTitle": "Frankfurt am Main, Offenbach, Hanau ve çevresi.",
     "areaText": "Tek kabin veya birden fazla araç: temizlik uygun ve izinli bir park alanında planlanır. Ulaşım ve gerekli altyapı önceden kararlaştırılır.",
     "plannerTag": "BİRKAÇ KOLAY ADIM",
     "plannerTitle": "Sonraki durak: temiz kabin.",
@@ -457,7 +463,7 @@ const translations = {
       ],
       [
         "Konumda neler gerekli?",
-        "Uygun ve izinli bir park yeri, kabine erişim ve gerektiğinde elektrik ile su. Kirli suyun usulüne uygun toplanması ve bertarafı önceden netleştirilmelidir."
+        "Uygun ve izinli bir park yeri, kabine erişim ve gerektiğinde elektrik ile su. Kirli suyun usulüne uygun toplanması ve bertarafı önceden netleştirilmelidir. Talep formunda priz olup olmadığını veya elektrik kaynağını bizim getirmemiz gerektiğini belirtin. Ayrıntıları önceden netleştiririz."
       ],
       [
         "Döşeme temizliğinden hemen sonra yola çıkabilir miyim?",
@@ -490,8 +496,6 @@ const translations = {
     "plus": "Bir araç artır",
     "ready": "WhatsApp bağlantısı hazır. Lütfen mesajı orada kontrol edip kendiniz gönderin.",
     "messagePreview": "Mesajı görüntüle",
-    "pauseMotion": "Animasyonları duraklat",
-    "resumeMotion": "Animasyonları başlat",
     "motionLabel": "Hareket",
     "exploreTag": "FARK İÇERİDE BAŞLAR",
     "exploreTitle": "Temizlik ayrıntılarda.",
@@ -508,13 +512,18 @@ const translations = {
     "tapHint": "Bakımı keşfetmek için bir alana dokun",
     "discover": "Kabini keşfet",
     "ribbon1": "MOBİL İÇ TEMİZLİK",
-    "ribbon2": "OFFENBACH · REN-MAİN",
+    "ribbon2": "Frankfurt am Main, Offenbach, Hanau ve çevresi",
     "ribbon3": "ODAĞIMIZ KABİNİN",
-    "motionReduced": "Cihaz ayarın nedeniyle animasyonlar azaltıldı"
+    "electricityLabel": "Temizlik yapılacak yerde elektrik prizi var mı?",
+    "electricityAvailable": "Evet, kullanılabilir bir priz var.",
+    "electricityNeeded": "Hayır, lütfen elektrik kaynağı getirin.",
+    "electricityUnsure": "Emin değilim.",
+    "electricityHelp": "Elektrik kaynağını bizim getirmemiz gerekiyorsa seçenekleri randevudan önce netleştiririz.",
+    "electricityRequired": "Lütfen elektrik kaynağıyla ilgili bir seçenek seçin."
   },
   "ar": {
-    "title": "كابيفيو Kabivio · تنظيف متنقل لكبائن الشاحنات",
-    "description": "تنظيف داخلي متنقل للشاحنات في أوفنباخ ومنطقة الراين والماين. قارن الخدمات وجهّز مسودة استفسار غير ملزمة.",
+    "title": "كابيفيو Kabivio · تنظيف كبائن الشاحنات في فرانكفورت وأوفنباخ وهاناو",
+    "description": "تنظيف داخلي متنقل للشاحنات في فرانكفورت أم ماين، أوفنباخ، هاناو والمناطق القريبة. قارن الخدمات وجهّز مسودة استفسار غير ملزمة.",
     "skip": "انتقل إلى المحتوى",
     "service": "تنظيف متنقل لكبائن الشاحنات",
     "navServices": "الخدمات",
@@ -524,10 +533,10 @@ const translations = {
     "language": "اللغة",
     "menu": "القائمة",
     "notice": "نستعد للانطلاق. مهتم بالخدمة؟ تواصل معنا عبر واتساب.",
-    "eyebrow": "أوفنباخ ومنطقة الراين والماين",
+    "eyebrow": "فرانكفورت أم ماين، أوفنباخ، هاناو والمناطق القريبة",
     "hero1": "كابينتك.",
     "hero2": "بنَفَس جديد.",
-    "intro": "مكان شغلك بيستاهل بداية نظيفة. تنظيف متنقل لكابينة شاحنتك في أوفنباخ ومنطقة الراين–ماين.",
+    "intro": "مكان شغلك بيستاهل بداية نظيفة. تنظيف متنقل لكابينة شاحنتك في فرانكفورت أم ماين، أوفنباخ، هاناو والمناطق القريبة.",
     "cta": "اختر خدمة التنظيف",
     "secondary": "عندك سؤال؟ واتساب",
     "heroNote": "مع ماركوس مباشرة · للسائقين والأساطيل الصغيرة",
@@ -589,7 +598,7 @@ const translations = {
       ]
     ],
     "areaTag": "خدمة متنقلة في منطقتك",
-    "areaTitle": "ننطلق من أوفنباخ. ونحدّد الموقع معك.",
+    "areaTitle": "فرانكفورت أم ماين، أوفنباخ، هاناو والمناطق القريبة.",
     "areaText": "سواء كانت كابينة واحدة أو عدة شاحنات، نخطّط للتنظيف في موقف مناسب ومسموح بالعمل فيه. نتفق مسبقًا على الانتقال والتجهيزات المطلوبة في الموقع.",
     "plannerTag": "بخطوات بسيطة",
     "plannerTitle": "محطتك الجاية: كابينة نظيفة.",
@@ -628,7 +637,7 @@ const translations = {
       ],
       [
         "ما المطلوب في موقع التنظيف؟",
-        "موقف مناسب ومسموح بالعمل فيه، وإمكانية الوصول إلى الكابينة، وكهرباء وماء عند الحاجة. ويجب الاتفاق مسبقًا على جمع مياه التنظيف والتخلص منها بالطريقة الصحيحة."
+        "موقف مناسب ومسموح بالعمل فيه، وإمكانية الوصول إلى الكابينة، وكهرباء وماء عند الحاجة. ويجب الاتفاق مسبقًا على جمع مياه التنظيف والتخلص منها بالطريقة الصحيحة. حدّد في نموذج الطلب إن كان يتوفر مقبس كهرباء أو تحتاج منا إحضار مصدر كهرباء. نتفق على إمكانية توفيره مسبقًا."
       ],
       [
         "هل أستطيع القيادة مباشرة بعد غسيل الأقمشة؟",
@@ -661,8 +670,6 @@ const translations = {
     "plus": "زيادة عدد الشاحنات",
     "ready": "رابط واتساب جاهز. راجع الرسالة هناك وأرسلها بنفسك.",
     "messagePreview": "عرض نص الرسالة",
-    "pauseMotion": "إيقاف الحركة",
-    "resumeMotion": "تشغيل الحركة",
     "motionLabel": "الحركة",
     "exploreTag": "الفرق بيبدأ من جوّا",
     "exploreTitle": "النظافة بالتفاصيل.",
@@ -679,8 +686,13 @@ const translations = {
     "tapHint": "اضغط على الجزء لتعرف طريقة العناية",
     "discover": "اكتشف الكابينة",
     "ribbon1": "تنظيف داخلي متنقل",
-    "ribbon2": "أوفنباخ · الراين–ماين",
+    "ribbon2": "فرانكفورت أم ماين، أوفنباخ، هاناو والمناطق القريبة",
     "ribbon3": "العناية بكابينتك",
-    "motionReduced": "الحركة مخففة حسب إعدادات جهازك"
+    "electricityLabel": "هل يتوفر مقبس كهرباء في موقع التنظيف؟",
+    "electricityAvailable": "نعم، يوجد مقبس كهرباء متاح.",
+    "electricityNeeded": "لا، أحتاج منكم إحضار مصدر كهرباء.",
+    "electricityUnsure": "لست متأكدًا.",
+    "electricityHelp": "إذا كنت تحتاج منا إحضار مصدر كهرباء، نتفق على إمكانية توفيره قبل الموعد.",
+    "electricityRequired": "يرجى اختيار إجابة عن توفر الكهرباء."
   }
 };

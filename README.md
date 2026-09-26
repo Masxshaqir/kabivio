@@ -1,6 +1,6 @@
 # Kabivio — website review
 
-A responsive, four-language preview for Marcus Shaqir’s planned mobile truck cabin cleaning business in Offenbach and the Rhine-Main area.
+A responsive, four-language preview for Marcus Shaqir’s planned mobile truck cabin cleaning business in Frankfurt am Main, Offenbach, Hanau and nearby areas.
 
 ## Review the website
 
@@ -8,7 +8,7 @@ Open the GitHub Pages link in this repository’s About section. Use the languag
 
 Please review mobile usability, text clarity, package selection, animations and the WhatsApp enquiry flow. You can leave feedback in this repository’s Issues.
 
-The form prepares a WhatsApp message addressed to the business contact. The visitor chooses whether to send it. No message, booking or payment is created automatically. Prices are provisional planning prices.
+The form asks whether a power socket is available, a power supply is needed, or the customer is unsure. This answer is required and included in the WhatsApp message addressed to the business contact. Power arrangements are confirmed before the appointment. The visitor chooses whether to send it. No message, booking or payment is created automatically. Prices are provisional planning prices.
 
 This is a pre-launch review version. It does not establish that business registration, insurance, final legal disclosures or appointment availability have been completed. The cabin artwork is an AI-generated illustration, not a customer vehicle.
 
@@ -24,6 +24,6 @@ The website is plain HTML, CSS and JavaScript. No build step or API key is requi
 - `fonts.css` and `.woff2` files: self-hosted Manrope and Noto Sans Arabic fonts
 - `cabin-motion.jpg`: illustrative cabin artwork
 
-Font licenses are included in `manrope-OFL.txt` and `notosansarabic-OFL.txt`. The website respects the device’s reduced-motion preference and also provides a pause button.
+Font licenses are included in `manrope-OFL.txt` and `notosansarabic-OFL.txt`. The website respects the device’s reduced-motion preference with animations running automatically otherwise.
 
 Run any static file server in this directory to preview locally.

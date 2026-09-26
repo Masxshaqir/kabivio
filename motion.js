@@ -1,21 +1,14 @@
 'use strict';
 (() => {
  const root=document.documentElement;
- const motionButton=document.getElementById('motion-toggle');
  const media=window.matchMedia('(prefers-reduced-motion: reduce)');
  let paused=media.matches,zone='seat';
  const localText=key=>translations[root.lang]?.[key]||translations.de[key];
  const refreshMotion=()=>{
+  paused=media.matches;
   root.classList.toggle('motion-paused',paused);
-  motionButton.setAttribute('aria-pressed',String(paused));
-  motionButton.disabled=media.matches;
-  const label=localText(media.matches?'motionReduced':paused?'resumeMotion':'pauseMotion');
-  motionButton.setAttribute('aria-label',label);motionButton.title=label;
-  motionButton.querySelector('.sr-only').textContent=label;
-  motionButton.querySelector('.motion-icon').textContent=paused?'▷':'Ⅱ';
  };
- motionButton.addEventListener('click',()=>{paused=!paused;refreshMotion();});
- media.addEventListener('change',e=>{paused=e.matches;refreshMotion();});
+ media.addEventListener('change',refreshMotion);
  refreshMotion();
  const zoneInfo=document.querySelector('.zone-info');
  const refreshZone=()=>{
@@ -32,9 +25,9 @@
   requestAnimationFrame(()=>{zoneInfo.classList.add('changing');});
  }));
  zoneInfo.addEventListener('animationend',()=>zoneInfo.classList.remove('changing'));
- document.getElementById('language').addEventListener('change',()=>{refreshMotion();refreshZone();});
- // Language changes from the accessible tools also update motion labels.
- const languageObserver=new MutationObserver(()=>{refreshMotion();refreshZone();});
+ document.getElementById('language').addEventListener('change',refreshZone);
+ // Keep the selected cabin area in the current page language.
+ const languageObserver=new MutationObserver(refreshZone);
  languageObserver.observe(root,{attributes:true,attributeFilter:['lang']});
  let frame=0;
  const progress=document.querySelector('.reading-progress');
