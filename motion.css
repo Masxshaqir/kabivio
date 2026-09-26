@@ -35,6 +35,6 @@ main{overflow-x:clip}
 /* Vector icons retain the same appearance on iOS and other devices. */
 .action-icon{display:inline-flex;align-items:center;justify-content:center;inline-size:24px;block-size:24px;flex:0 0 24px;line-height:1}
 .icon-arrow{display:block;inline-size:22px;block-size:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-[dir=rtl] .icon-arrow{transform:scaleX(-1)}
+[dir=rtl] .text-action>.action-icon{transform:scaleX(-1)}
 .ribbon-spark{display:block;inline-size:24px;block-size:24px;flex:0 0 24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
 @media(max-width:650px){.ribbon-spark{inline-size:20px;block-size:20px;flex-basis:20px}.hero-actions .button{gap:16px}.text-action{gap:16px}}
