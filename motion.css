@@ -28,3 +28,6 @@ main{overflow-x:clip}
 
 .hero-image{animation:none;opacity:1}
 .motion-paused .zone-info #zone-panel{animation:none;opacity:1;transform:none}
+
+/* Extend the hero lighting to the screen edges without changing content spacing. */
+.hero-backdrop{inset-inline:calc((100% - 100vw) / 2)}
