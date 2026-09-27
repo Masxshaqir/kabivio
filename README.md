@@ -27,3 +27,8 @@ The website is plain HTML, CSS and JavaScript. No build step or API key is requi
 Font licenses are included in `manrope-OFL.txt` and `notosansarabic-OFL.txt`. The website respects the device’s reduced-motion preference with animations running automatically otherwise.
 
 Run any static file server in this directory to preview locally.
+
+
+## Publishing updates
+
+Keep every website change synchronized with this GitHub repository. A change is complete only after GitHub Pages has deployed it and the public site has been checked. Do not leave completed updates only in a local preview.

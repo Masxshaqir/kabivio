@@ -179,7 +179,8 @@ const translations = {
     "postalCodeRequired": "Bitte eine gültige fünfstellige Postleitzahl angeben.",
     "buildingNumberRequired": "Bitte die Haus- oder Gebäudenummer angeben.",
     "buildingNumberPlaceholder": "z. B. 12a",
-    "addressHint": "Bitte die Adresse angeben, an der dein LKW gereinigt werden soll."
+    "addressHint": "Bitte die Adresse angeben, an der dein LKW gereinigt werden soll.",
+    "serviceAreaLabel": "Unser Servicegebiet"
   },
   "en": {
     "title": "Kabivio · Mobile truck cabin cleaning in Frankfurt am Main, Offenbach and Hanau",
@@ -361,7 +362,8 @@ const translations = {
     "postalCodeRequired": "Please enter a valid five-digit postal code.",
     "buildingNumberRequired": "Please enter the house or company building number.",
     "buildingNumberPlaceholder": "e.g. 12a",
-    "addressHint": "Enter the address where your truck should be cleaned."
+    "addressHint": "Enter the address where your truck should be cleaned.",
+    "serviceAreaLabel": "Our service area"
   },
   "tr": {
     "title": "Kabivio · Frankfurt am Main, Offenbach ve Hanau’da mobil tır kabini temizliği",
@@ -543,7 +545,8 @@ const translations = {
     "postalCodeRequired": "Lütfen beş haneli geçerli bir posta kodu girin.",
     "buildingNumberRequired": "Lütfen ev veya şirket binasının numarasını girin.",
     "buildingNumberPlaceholder": "Örn. 12a",
-    "addressHint": "Tırınızın temizlenmesini istediğiniz yerin adresini girin."
+    "addressHint": "Tırınızın temizlenmesini istediğiniz yerin adresini girin.",
+    "serviceAreaLabel": "Hizmet bölgemiz"
   },
   "ar": {
     "title": "كابيفيو Kabivio · تنظيف كبائن الشاحنات في فرانكفورت وأوفنباخ وهاناو",
@@ -725,6 +728,7 @@ const translations = {
     "postalCodeRequired": "يرجى إدخال رمز بريدي صحيح من خمسة أرقام.",
     "buildingNumberRequired": "يرجى إدخال رقم المنزل أو مبنى الشركة.",
     "buildingNumberPlaceholder": "مثلًا 12a",
-    "addressHint": "أدخل عنوان المكان الذي تريد تنظيف الشاحنة فيه."
+    "addressHint": "أدخل عنوان المكان الذي تريد تنظيف الشاحنة فيه.",
+    "serviceAreaLabel": "منطقة خدمتنا"
   }
 };
