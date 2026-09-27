@@ -68,7 +68,7 @@ const translations = {
       ],
       [
         "Standort mitteilen",
-        "Schreib uns deinen Ort und Terminwunsch."
+        "Gib die vollständige Adresse und deinen Terminwunsch an."
       ],
       [
         "Gemeinsam abstimmen",
@@ -83,8 +83,7 @@ const translations = {
     "plannerIntro": "Öffne deine vorbereitete Nachricht in WhatsApp. Dort kannst du sie prüfen und selbst absenden.",
     "packageLabel": "Deine Reinigung",
     "quantityLabel": "Wie viele LKW?",
-    "locationLabel": "Wo steht dein LKW?",
-    "locationPlaceholder": "Ort oder Postleitzahl",
+    "locationLabel": "Vollständige Adresse des Reinigungsorts",
     "dateLabel": "Wunschtermin",
     "notesLabel": "Deine Hinweise",
     "notesPlaceholder": "Zum Beispiel: stark verschmutzte Sitze",
@@ -100,7 +99,6 @@ const translations = {
     "copyFail": "Kopieren ist hier nicht verfügbar. Bitte lade den Entwurf herunter.",
     "downloaded": "Nachricht heruntergeladen.",
     "invalidQty": "Bitte eine ganze Anzahl von 1 bis 20 wählen.",
-    "locationRequired": "Bitte einen Ort oder eine Postleitzahl angeben.",
     "dateInvalid": "Bitte ein gültiges Datum wählen.",
     "draftHeading": "ANFRAGE AN KABIVIO",
     "open": "noch offen",
@@ -171,7 +169,17 @@ const translations = {
     "electricityNeeded": "Nein, bitte bringt eine Stromversorgung mit.",
     "electricityUnsure": "Ich bin nicht sicher.",
     "electricityHelp": "Falls wir die Stromversorgung mitbringen sollen, klären wir die Möglichkeiten vor dem Termin.",
-    "electricityRequired": "Bitte wähle eine Antwort zur Stromversorgung."
+    "electricityRequired": "Bitte wähle eine Antwort zur Stromversorgung.",
+    "cityLabel": "Stadt / Ort",
+    "streetLabel": "Straße",
+    "postalCodeLabel": "Postleitzahl",
+    "buildingNumberLabel": "Hausnummer",
+    "cityRequired": "Bitte die Stadt oder den Ort angeben.",
+    "streetRequired": "Bitte den Straßennamen angeben.",
+    "postalCodeRequired": "Bitte eine gültige fünfstellige Postleitzahl angeben.",
+    "buildingNumberRequired": "Bitte die Haus- oder Gebäudenummer angeben.",
+    "buildingNumberPlaceholder": "z. B. 12a",
+    "addressHint": "Bitte die Adresse angeben, an der dein LKW gereinigt werden soll."
   },
   "en": {
     "title": "Kabivio · Mobile truck cabin cleaning in Frankfurt am Main, Offenbach and Hanau",
@@ -242,7 +250,7 @@ const translations = {
       ],
       [
         "Tell us where",
-        "Share your location and preferred date."
+        "Share the full address and your preferred date."
       ],
       [
         "Agree the details",
@@ -257,8 +265,7 @@ const translations = {
     "plannerIntro": "Open your prepared message in WhatsApp. Review it there and send it yourself.",
     "packageLabel": "Your cleaning package",
     "quantityLabel": "How many trucks?",
-    "locationLabel": "Where is your truck?",
-    "locationPlaceholder": "Town or postcode",
+    "locationLabel": "Full address of the cleaning location",
     "dateLabel": "Preferred date",
     "notesLabel": "Your notes",
     "notesPlaceholder": "For example: heavily soiled seats",
@@ -274,7 +281,6 @@ const translations = {
     "copyFail": "Copy is unavailable here. Please download the draft.",
     "downloaded": "Message downloaded.",
     "invalidQty": "Choose a whole number from 1 to 20.",
-    "locationRequired": "Please enter a town or postcode.",
     "dateInvalid": "Please choose a valid date.",
     "draftHeading": "ENQUIRY TO KABIVIO",
     "open": "not yet decided",
@@ -345,7 +351,17 @@ const translations = {
     "electricityNeeded": "No, please bring a power supply.",
     "electricityUnsure": "I’m not sure.",
     "electricityHelp": "If you need us to bring a power supply, we’ll agree the arrangements before the appointment.",
-    "electricityRequired": "Please choose an answer about the power supply."
+    "electricityRequired": "Please choose an answer about the power supply.",
+    "cityLabel": "City / town",
+    "streetLabel": "Street",
+    "postalCodeLabel": "Postal code",
+    "buildingNumberLabel": "Building number",
+    "cityRequired": "Please enter the city or town.",
+    "streetRequired": "Please enter the street name.",
+    "postalCodeRequired": "Please enter a valid five-digit postal code.",
+    "buildingNumberRequired": "Please enter the house or company building number.",
+    "buildingNumberPlaceholder": "e.g. 12a",
+    "addressHint": "Enter the address where your truck should be cleaned."
   },
   "tr": {
     "title": "Kabivio · Frankfurt am Main, Offenbach ve Hanau’da mobil tır kabini temizliği",
@@ -416,7 +432,7 @@ const translations = {
       ],
       [
         "Konumu bildirin",
-        "Konumunuzu ve tercih ettiğiniz tarihi yazın."
+        "Tam adresi ve tercih ettiğiniz tarihi yazın."
       ],
       [
         "Ayrıntıları netleştirelim",
@@ -431,8 +447,7 @@ const translations = {
     "plannerIntro": "Hazır mesajınızı WhatsApp’ta açın. Orada kontrol edip kendiniz gönderin.",
     "packageLabel": "Temizlik paketiniz",
     "quantityLabel": "Kaç tır?",
-    "locationLabel": "Tırınız nerede?",
-    "locationPlaceholder": "Şehir veya posta kodu",
+    "locationLabel": "Temizlik yapılacak yerin tam adresi",
     "dateLabel": "Tercih edilen tarih",
     "notesLabel": "Notlarınız",
     "notesPlaceholder": "Örneğin: çok kirli koltuklar",
@@ -448,7 +463,6 @@ const translations = {
     "copyFail": "Burada kopyalama kullanılamıyor. Lütfen taslağı indirin.",
     "downloaded": "Mesaj indirildi.",
     "invalidQty": "Lütfen 1 ile 20 arasında bir tam sayı seçin.",
-    "locationRequired": "Lütfen şehir veya posta kodu girin.",
     "dateInvalid": "Lütfen geçerli bir tarih seçin.",
     "draftHeading": "KABIVIO HİZMET TALEBİ",
     "open": "henüz belirlenmedi",
@@ -519,7 +533,17 @@ const translations = {
     "electricityNeeded": "Hayır, lütfen elektrik kaynağı getirin.",
     "electricityUnsure": "Emin değilim.",
     "electricityHelp": "Elektrik kaynağını bizim getirmemiz gerekiyorsa seçenekleri randevudan önce netleştiririz.",
-    "electricityRequired": "Lütfen elektrik kaynağıyla ilgili bir seçenek seçin."
+    "electricityRequired": "Lütfen elektrik kaynağıyla ilgili bir seçenek seçin.",
+    "cityLabel": "Şehir / ilçe",
+    "streetLabel": "Sokak / cadde",
+    "postalCodeLabel": "Posta kodu",
+    "buildingNumberLabel": "Bina numarası",
+    "cityRequired": "Lütfen şehir veya ilçe adını girin.",
+    "streetRequired": "Lütfen sokak veya cadde adını girin.",
+    "postalCodeRequired": "Lütfen beş haneli geçerli bir posta kodu girin.",
+    "buildingNumberRequired": "Lütfen ev veya şirket binasının numarasını girin.",
+    "buildingNumberPlaceholder": "Örn. 12a",
+    "addressHint": "Tırınızın temizlenmesini istediğiniz yerin adresini girin."
   },
   "ar": {
     "title": "كابيفيو Kabivio · تنظيف كبائن الشاحنات في فرانكفورت وأوفنباخ وهاناو",
@@ -590,7 +614,7 @@ const translations = {
       ],
       [
         "أخبرنا بالموقع",
-        "اكتب موقعك والموعد الذي يناسبك."
+        "اكتب العنوان كاملًا والموعد الذي يناسبك."
       ],
       [
         "نتفق على التفاصيل",
@@ -605,8 +629,7 @@ const translations = {
     "plannerIntro": "افتح رسالتك الجاهزة في واتساب، ثم راجعها وأرسلها بنفسك.",
     "packageLabel": "باقة التنظيف",
     "quantityLabel": "كم شاحنة؟",
-    "locationLabel": "أين شاحنتك؟",
-    "locationPlaceholder": "المدينة أو الرمز البريدي",
+    "locationLabel": "العنوان الكامل لموقع التنظيف",
     "dateLabel": "الموعد الذي يناسبك",
     "notesLabel": "ملاحظاتك",
     "notesPlaceholder": "مثلًا: المقاعد شديدة الاتساخ",
@@ -622,7 +645,6 @@ const translations = {
     "copyFail": "النسخ غير متاح هنا. يمكنك تنزيل المسودة.",
     "downloaded": "تم تنزيل الرسالة.",
     "invalidQty": "اختر عددًا صحيحًا بين ١ و٢٠.",
-    "locationRequired": "يرجى إدخال المدينة أو الرمز البريدي.",
     "dateInvalid": "يرجى اختيار تاريخ صحيح.",
     "draftHeading": "استفسار عن خدمة كابيفيو",
     "open": "لم يُحدَّد بعد",
@@ -693,6 +715,16 @@ const translations = {
     "electricityNeeded": "لا، أحتاج منكم إحضار مصدر كهرباء.",
     "electricityUnsure": "لست متأكدًا.",
     "electricityHelp": "إذا كنت تحتاج منا إحضار مصدر كهرباء، نتفق على إمكانية توفيره قبل الموعد.",
-    "electricityRequired": "يرجى اختيار إجابة عن توفر الكهرباء."
+    "electricityRequired": "يرجى اختيار إجابة عن توفر الكهرباء.",
+    "cityLabel": "المدينة",
+    "streetLabel": "اسم الشارع",
+    "postalCodeLabel": "الرمز البريدي",
+    "buildingNumberLabel": "رقم المبنى",
+    "cityRequired": "يرجى إدخال المدينة.",
+    "streetRequired": "يرجى إدخال اسم الشارع.",
+    "postalCodeRequired": "يرجى إدخال رمز بريدي صحيح من خمسة أرقام.",
+    "buildingNumberRequired": "يرجى إدخال رقم المنزل أو مبنى الشركة.",
+    "buildingNumberPlaceholder": "مثلًا 12a",
+    "addressHint": "أدخل عنوان المكان الذي تريد تنظيف الشاحنة فيه."
   }
 };

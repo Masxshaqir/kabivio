@@ -52,3 +52,13 @@ main{overflow-x:clip}
 .power-option:focus-within{outline:2px solid #3b7b50;outline-offset:2px}
 .field-help{font-size:.75rem;line-height:1.6;color:#5a6b5a;margin-block-start:10px}
 @media(max-width:650px){.hero .location-pill{font-size:.68rem}.electricity-field legend{font-size:.875rem}}
+
+/* Full service address, with clear labels and compact number fields. */
+.address-field{border:0;padding:0;min-inline-size:0;margin:0 0 24px}
+.address-field legend{display:flex;align-items:center;gap:9px;padding:0;font-size:.9rem;font-weight:700;line-height:1.5}
+.address-field .field-help{margin-block:10px 14px}
+.address-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.address-grid label{display:flex;flex-direction:column;align-items:stretch;gap:7px;margin:0;min-width:0;font-size:.8125rem}
+.address-wide{grid-column:1/-1}
+.address-grid input{min-width:0}
+@media(max-width:360px){.address-grid{grid-template-columns:minmax(0,1fr)}}

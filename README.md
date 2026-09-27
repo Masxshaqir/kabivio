@@ -8,7 +8,7 @@ Open the GitHub Pages link in this repository’s About section. Use the languag
 
 Please review mobile usability, text clarity, package selection, animations and the WhatsApp enquiry flow. You can leave feedback in this repository’s Issues.
 
-The form asks whether a power socket is available, a power supply is needed, or the customer is unsure. This answer is required and included in the WhatsApp message addressed to the business contact. Power arrangements are confirmed before the appointment. The visitor chooses whether to send it. No message, booking or payment is created automatically. Prices are provisional planning prices.
+The form requires the cleaning location’s city, street, five-digit German postal code, and house or company building number. These fields are included in the WhatsApp draft. It also asks whether a power socket is available, a power supply is needed, or the customer is unsure. This answer is required and included in the WhatsApp message addressed to the business contact. Power arrangements are confirmed before the appointment. The visitor chooses whether to send it. No message, booking or payment is created automatically. Prices are provisional planning prices.
 
 This is a pre-launch review version. It does not establish that business registration, insurance, final legal disclosures or appointment availability have been completed. The cabin artwork is an AI-generated illustration, not a customer vehicle.
 
