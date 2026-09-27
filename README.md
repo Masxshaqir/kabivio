@@ -32,3 +32,9 @@ Run any static file server in this directory to preview locally.
 ## Publishing updates
 
 Keep every website change synchronized with this GitHub repository. A change is complete only after GitHub Pages has deployed it and the public site has been checked. Do not leave completed updates only in a local preview.
+
+
+## Three-step enquiry
+The planner separates package and truck selection, the cleaning address and power availability, and a final editable review. Going back preserves the current entries. Each stage validates its required fields. Package and address edits refresh the estimate and the WhatsApp message. The site only prepares an enquiry; the customer opens WhatsApp and sends the message there. Final price and appointments require separate confirmation.
+
+Before publishing changes to this flow, check all four languages, mobile layouts, required address and power fields, quantity limits, back/edit/reset, and consistency between the review and the prepared WhatsApp message. Never send test enquiries to the business.
