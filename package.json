@@ -1,0 +1,8 @@
+{
+  "name": "kabivio-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static website; dependencies are for local regression tests only.",
+  "scripts": { "test": "node --test audit.test.cjs" },
+  "devDependencies": { "jsdom": "26.1.0" }
+}

@@ -56,5 +56,10 @@
    },{passive:true});
   });
  }
- window.addEventListener('pagehide',()=>{languageObserver.disconnect();revealObserver?.disconnect();if(frame)cancelAnimationFrame(frame);},{once:true});
+ window.addEventListener('pageshow',()=>{refreshMotion();updateProgress();});
+ window.addEventListener('pagehide',event=>{
+  if(frame){cancelAnimationFrame(frame);frame=0;}
+  // A cached page resumes with these observers intact when the visitor returns.
+  if(!event.persisted){languageObserver.disconnect();revealObserver?.disconnect();}
+ });
 })();

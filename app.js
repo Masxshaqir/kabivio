@@ -6,7 +6,6 @@ const packageKeys={'Basis':'p1','Intensiv':'p2','Textil Plus':'p3'};
 const locales={de:'de-DE',en:'en-IE',tr:'tr-TR',ar:'ar-EG'};
 const $=id=>document.getElementById(id);
 const form=$('planner'),quantity=$('quantity'),city=$('city'),street=$('street'),postalCode=$('postal-code'),buildingNumber=$('building-number'),date=$('date'),notes=$('notes');
-const addressFields=[city,street,postalCode,buildingNumber];
 const packageInputs=[...form.querySelectorAll('input[name=package]')];
 const selectedPackage=()=>packageInputs.find(el=>el.checked)?.value;
 const normalizePostalCode=value=>value.trim().replace(/[٠-٩]/g,c=>String(c.charCodeAt(0)-0x660)).replace(/[۰-۹]/g,c=>String(c.charCodeAt(0)-0x6f0));
@@ -82,6 +81,13 @@ function renderErrors(){
  const first=Object.keys(errorKeys).find(id=>fieldStep(id)===currentStep);
  $('errors').textContent=first?t(errorKeys[first]):'';
 }
+function refreshDateMinimum(){
+ // The service operates in Germany, independent of the visitor's time zone.
+ const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+ const part=type=>parts.find(item=>item.type===type).value;
+ date.min=part('year')+'-'+part('month')+'-'+part('day');
+ return date.min;
+}
 function getErrors(step){
  const errors={};
  if(step===undefined||step===0){
@@ -94,7 +100,9 @@ function getErrors(step){
   if(!/^[0-9]{5}$/.test(normalizePostalCode(postalCode.value)))errors['postal-code']='postalCodeRequired';
   if(!buildingNumber.value.trim())errors['building-number']='buildingNumberRequired';
   if(!Object.hasOwn(electricityKeys,electricityChoice()))errors.electricity='electricityRequired';
+  const today=refreshDateMinimum();
   if(date.validity.badInput||(date.value&&(!/^\d{4}-\d{2}-\d{2}$/.test(date.value)||isNaN(new Date(date.value+'T12:00:00').getTime()))))errors.date='dateInvalid';
+  else if(date.value&&date.value<today)errors.date='datePast';
  }
  return errors;
 }
@@ -160,12 +168,15 @@ form.addEventListener('submit',e=>{e.preventDefault();moveForward();});
 $('whatsapp-ready').addEventListener('click',e=>{if(!prepareEnquiry({focus:false}))e.preventDefault();});
 $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft);$('feedback').textContent=t('copied');}catch{$('feedback').textContent=t('copyFail');}});
 $('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob(['\uFEFF'+draft],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='Kabivio-enquiry-'+lang+'.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('feedback').textContent=t('downloaded');});
+refreshDateMinimum();
+window.addEventListener('pageshow',()=>{refreshDateMinimum();updateTotal();if(hasDraft){if(Object.keys(getErrors()).length){invalidateDraft();validate();}else renderDraft();}});
 setLanguage(lang);
-if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{const visible=entries[0].isIntersecting;$('mobile-submit').hidden=!visible;$('mobile-choose').hidden=visible;},{rootMargin:'-80px 0px -90px 0px',threshold:0});observer.observe(form);window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});}
+form.removeAttribute('inert');
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{const visible=entries[0].isIntersecting;$('mobile-submit').hidden=!visible;$('mobile-choose').hidden=visible;},{rootMargin:'-80px 0px -90px 0px',threshold:0});observer.observe(form);window.addEventListener('pagehide',event=>{if(!event.persisted)observer.disconnect();});}
 if(document.modelContext?.registerTool){
  const lifecycle=new AbortController();
  const register=tool=>{try{Promise.resolve(document.modelContext.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}};
  register({name:'configure_cleaning_draft',description:'Select a Kabivio cleaning package, truck count and optional page language. Updates visible state without contacting anyone or booking.',inputSchema:{type:'object',properties:{package:{type:'string',enum:Object.keys(prices)},quantity:{type:'integer',minimum:1,maximum:20},language:{type:'string',enum:['de','en','tr','ar']}},required:['package','quantity'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){if(!input||typeof input!=='object')throw new Error('Invalid input');if(input.language!==undefined&&!Object.hasOwn(translations,input.language))throw new Error('Invalid language');const result=configure(input.package,input.quantity);if(input.language)setLanguage(input.language);return {...result,language:lang};}});
  register({name:'prepare_cleaning_enquiry',description:'Validate the visible form and show the Kabivio review step with a WhatsApp enquiry draft. Does not open WhatsApp, send any message, or book an appointment.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(){const url=prepareEnquiry();return url?{prepared:true,recipient:phone,url,messageSent:false,bookingCreated:false}:{prepared:false,error:$('errors').textContent,messageSent:false};}});
- window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+ window.addEventListener('pagehide',event=>{if(!event.persisted)lifecycle.abort();});
 }
